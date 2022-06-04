@@ -1,0 +1,27 @@
+CREATE DATABASE blood_donation;
+
+USE blood_donation
+
+CREATE TABLE blood_type (
+	ID_type int PRIMARY KEY,
+    Type varchar (10) CHECK (Type IN ('Unknown', 'A+', 'A-', 'B+', 'B-', 'O+', 'O-', 'AB+','AB-'))
+);
+
+CREATE TABLE Donor (
+	CIN varchar(10) PRIMARY KEY,
+    First_name varchar(30),
+    Last_name varchar(30),
+    Gender varchar(10) NOT NULL CHECK (Gender IN ('Male', 'Female')),
+    Adress varchar(50),
+    Birthday date,
+    Phone varchar (10),
+    ID_Type_Donor int,
+    FOREIGN KEY (ID_Type_Donor) REFERENCES blood_type (ID_type)
+);
+
+CREATE TABLE Appointment (
+    ID_appointment int PRIMARY KEY AUTO_INCREMENT,
+    appoin_date date
+    Donor_CIN varchar(10),
+    FOREIGN KEY (Donor_CIN) REFERENCES Donor(CIN)
+);
