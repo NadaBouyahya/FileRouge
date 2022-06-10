@@ -155,7 +155,12 @@ header img:nth-child(1){
 }
 
 /* first section */
+h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
 .how_to_donate{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,11 +168,13 @@ header img:nth-child(1){
 }
 
 .how_to_donate > div {
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
 }
 
 .how_to_donate p{
+    margin-top: 40px;
     box-sizing: border-box;
     width: 60%;
     text-align: center;
@@ -177,4 +184,29 @@ header img:nth-child(1){
     flex-direction: column;
     justify-content: center;
     align-items:center;
+}
+
+.about_div{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.about_content img{
+    margin-top: 40px;
+    width: 50%;
+    box-sizing: border-box;
+    box-shadow:rgba(215, 227, 232, 0.75) -20px -20px;
+}
+
+.about_content p{
+    /* width: 30%; */
+    margin-left: 50px;
+    font-size: 30px;
 }
