@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include'nav.html' ?>
+    <?php include'\xampp\htdocs\FileRouge\nav.html'?>
     <div>
         <div>
             <form action="">

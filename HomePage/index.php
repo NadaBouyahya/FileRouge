@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<?php include 'nav.html' ?> 
+<?php include '\xampp\htdocs\FileRouge\nav.html' ?> 
     <!-- header  -->
     <header>
         <div>
