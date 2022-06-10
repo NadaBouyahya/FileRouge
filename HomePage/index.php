@@ -10,29 +10,7 @@
 </head>
 
 <body>
-    <nav>
-        <div>
-            <div class="Logo_container">
-                <img src="s.png" alt="">
-                <img src="s.png" alt="">
-            </div>
-
-            <div class="nav_center">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Donate now</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-            </div>
-            <div class="nav_left">
-                <a href="#">
-                    <img class="login_icon" src="../images/user.png" alt="">
-                    <span>Login</span>
-                </a>
-            </div>
-        </div>
-    </nav>
- 
+<?php include 'nav.html' ?> 
     <!-- header  -->
     <header>
         <div>
@@ -54,15 +32,15 @@
                     <h1>How to donate</h1>
                     <div>
                         <div class="donate_divs">
-                            <img src="../images/add.png" alt="">
+                            <img class ="donate_icons" src="../images/add.png" alt="">
                             <p> Sign up and make your appointment </p>
                         </div>
                         <div class="donate_divs">
-                            <img src="../images/email.png" alt="">
+                            <img class ="donate_icons" src="../images/email.png" alt="">
                             <p>Receive an email with your appointment informations</p>
                         </div>
                         <div class="donate_divs">
-                            <img src="../images/location.png" alt="">
+                            <img class ="donate_icons" src="../images/location.png" alt="">
                             <p>Head to our hospital and help to save a life</p>
                         </div>
                     </div>
@@ -82,7 +60,7 @@
 
         <!-- whole blood section -->
         <section class="last_section">
-            <h1>whole blood section</h1>
+            <h1>whole blood donation</h1>
             <div class="lastSection_container">
                 <div class="lastSection_div">
                     <div>
@@ -116,11 +94,18 @@
                         <p>Every 12 weeks</p>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
 
+    <!-- footer -->
+    <footer>
+        <p>Adress: 1 Av. Moulay Rachid, Tanger 90100</p>
+        <img src="../images/logo_footer.png" alt="">
+        <p>Made by SAVE team © 2022</p>
+    </footer>
+
 </body>
 
 </html>
+

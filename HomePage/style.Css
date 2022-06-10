@@ -152,11 +152,12 @@ header img:nth-child(1){
     background-color:  rgba(69, 90, 100, 0.79);
     text-align: center;
     border-radius: 5px;    
+    cursor: pointer;
 }
 
 /* first section */
 h1{
-    font-size: 30px;
+    font-size: 28px;
 }
 .how_to_donate{
     margin-top: 50px;
@@ -183,6 +184,10 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items:center;
+}
+
+.donate_icons{
+    width: 55px;
 }
 
 .about_div{
@@ -220,6 +225,7 @@ h1{
 }
 
 .lastSection_container{
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
     /* align-items: center; */
@@ -243,4 +249,21 @@ h1{
 
 .lastSection_div p{
     margin-bottom: 20px;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgba(69, 90, 100, 0.79);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+footer p{
+    color: white;
+}
+footer img{
+    width: 62px;
 }
