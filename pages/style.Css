@@ -267,3 +267,42 @@ footer p{
 footer img{
     width: 62px;
 }
+
+/* Sign up page design*/
+
+.signup_container{
+    display: flex;
+}
+
+.form_titles{
+    margin-left: 198px;
+    margin-top: 45px;
+}
+
+.form_titles h2{
+    font-size: 30px;
+}
+
+.form_titles p{
+    margin-top: 20px;
+}
+
+.formInputs_container{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width:80%;
+}
+
+.signup_inputs input{
+    height: 50px;
+    width: 300px;
+    margin-top: 45px;
+    margin-left: 70px;
+}
+
+/* .signup_img img{
+    width: 400px;
+} */
