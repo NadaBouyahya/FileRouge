@@ -373,6 +373,11 @@ footer img{
     width: 70%;
     flex-wrap: wrap;
 }
+
+.signinForm_div h2{
+    font-size: 40px;
+}
+
 .signin_inputs div{
     width: 100%;
     display: flex;
@@ -382,6 +387,7 @@ footer img{
 .signin_inputs input{
     width: 70%;
     height: 50px;
+    font-size: 20px;
 }
 
 .signin_btn{
