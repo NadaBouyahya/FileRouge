@@ -12,7 +12,7 @@
 nav{
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 20px;
 }
 
 nav > div{
@@ -164,6 +164,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
 }
 
@@ -171,6 +172,9 @@ h1{
     margin-top: 40px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+
 }
 
 .how_to_donate p{
@@ -178,6 +182,7 @@ h1{
     box-sizing: border-box;
     width: 60%;
     text-align: center;
+    font-size: 25px;
 }
 .donate_divs{
     display: flex;
@@ -187,7 +192,7 @@ h1{
 }
 
 .donate_icons{
-    width: 55px;
+    width: 70px;
 }
 
 .about_div{
@@ -238,8 +243,10 @@ h1{
     width: 25%;
     background-color: rgba(215, 227, 232, 0.4);
     font-size: 20px;
+    text-align: justify;
     padding: 20px 30px;
     height: 400px;
+
 }
 
 .lastSection_div span{
@@ -272,11 +279,11 @@ footer img{
 
 .signup_container{
     display: flex;
+    justify-content: space-between;
 }
 
 .form_titles{
-    margin-left: 198px;
-    margin-top: 45px;
+    margin-top: 70px;
 }
 
 .form_titles h2{
@@ -286,23 +293,111 @@ footer img{
 .form_titles p{
     margin-top: 20px;
 }
+.form_titles p:nth-child(2) {
+    font-size: 18px;
+}
 
-.formInputs_container{
+.form_titles p a {
+    color: #EA6E6E;
+
+}
+/* .formInputs_container{
     display: flex;
     justify-content: center;
-}
+    width: 100%;
+} */
 
-form{
-    width:80%;
+.signupForm_div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
 }
-
-.signup_inputs input{
+.signup_inputs{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.signup_inputs div:not(.signup_btn){
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+.signup_inputs input:not(.signup_btn input){
     height: 50px;
-    width: 300px;
-    margin-top: 45px;
-    margin-left: 70px;
+    /* width: 200px; */
+    width: 100%;
 }
 
-/* .signup_img img{
+.signup_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.signup_btn input{
+    width: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #E89A9A;
+}
+
+/* .signup_img{
+    height: 100%;
+}
+.signup_img img{
     width: 400px;
 } */
+
+/*login page style*/
+
+.signinForm_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: antiquewhite;
+    margin-top: 100px;
+
+}
+.signin_inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    flex-wrap: wrap;
+}
+.signin_inputs div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.signin_inputs input{
+    width: 70%;
+    height: 50px;
+}
+
+.signin_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    width: 70% !important;
+}
+
+.signin_btn input{
+    width: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #E89A9A;
+}

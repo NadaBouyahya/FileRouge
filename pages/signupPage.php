@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.Css">
-    <title>Document</title>
+    <title>signup</title>
 </head>
 <body>
     <?php include '\xampp\htdocs\FileRouge\nav.html' ?>
@@ -18,22 +18,56 @@
                 <p>Already have an account ? <a href="#">Log in</a></p>
             </div>
 
-            <div class="formInputs_container">
                 <form class='signup_inputs' action="">
-                    <label for="">name</label> <br>
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
+
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div>  
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div> 
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div>                    
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text">   
+                    </div>
+                    <div class="signup_btn" >
+                        <input type="submit" value="SIGN UP">
+                    </div>
                 </form>
-            </div>
         
         </div>
 
