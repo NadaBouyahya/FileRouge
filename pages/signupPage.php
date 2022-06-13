@@ -8,14 +8,14 @@
     <title>signup</title>
 </head>
 <body>
-    <?php include '\xampp\htdocs\FileRouge\nav.html' ?>
+    <?php include '../nav.html' ?>
     <div class="signup_container">
         <div class="signupForm_div">
 
             <div class="form_titles">
                 <h2>Welcome to SAVE</h2>
                 <p>Let’s set you up so you can donate your blood</p>
-                <p>Already have an account ? <a href="#">Log in</a></p>
+                <p>Already have an account ? <a href="signin.php">Log in</a></p>
             </div>
 
                 <form class='signup_inputs' action="">

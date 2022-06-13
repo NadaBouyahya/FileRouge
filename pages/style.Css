@@ -13,7 +13,17 @@ nav{
     display: flex;
     justify-content: center;
     padding: 20px;
+    position: relative;
 }
+nav::after{
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    /* transform: translate(-50%, 0); */
+    background-color: #E89A9A;} 
 
 nav > div{
     display: flex;
@@ -182,7 +192,7 @@ h1{
     box-sizing: border-box;
     width: 60%;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 .donate_divs{
     display: flex;
@@ -193,6 +203,32 @@ h1{
 
 .donate_icons{
     width: 70px;
+}
+
+#centred_donate_icon{
+    position: relative;
+}
+
+#centred_donate_icon::after{
+    content: "";
+    width: 73%;
+    height: 2px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translate(-50%, 0);
+    background-color: #E89A9A;
+}
+
+#centred_donate_icon::before{
+    content: "";
+    width: 78%;
+    height: 2px;
+    position: absolute;
+    top: 20%;
+    left: 98%;
+    transform: translate(-50%, 0);
+    background-color: #E89A9A;
 }
 
 .about_div{
@@ -217,7 +253,7 @@ h1{
 .about_content p{
     /* width: 30%; */
     margin-left: 50px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /* last section : whole blood donation*/
@@ -243,7 +279,6 @@ h1{
     width: 25%;
     background-color: rgba(215, 227, 232, 0.4);
     font-size: 20px;
-    text-align: justify;
     padding: 20px 30px;
     height: 400px;
 
@@ -280,6 +315,7 @@ footer img{
 .signup_container{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .form_titles{
@@ -362,8 +398,7 @@ footer img{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: antiquewhite;
-    margin-top: 100px;
+    margin-top: 140px;
 
 }
 .signin_inputs{
@@ -376,7 +411,20 @@ footer img{
 
 .signinForm_div h2{
     font-size: 40px;
+    position: relative;
 }
+.signinForm_div h2::before{
+    content: "";
+    width: 140%;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #E89A9A;
+}
+
+
 
 .signin_inputs div{
     width: 100%;
@@ -387,7 +435,11 @@ footer img{
 .signin_inputs input{
     width: 70%;
     height: 50px;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.signin_inputs input::placeholder{
+    padding-left: 10px;
 }
 
 .signin_btn{
@@ -399,11 +451,19 @@ footer img{
 
 .signin_btn input{
     width: auto;
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 15px 20px;
+    font-size: 17px;
     font-weight: 600;
     box-sizing: border-box;
     border-radius: 5px;
     border-style: none;
     background-color: #E89A9A;
+}
+
+.signin_btn span{
+    font-size: 15px;
+}
+.signin_btn span a {
+    text-decoration: none;
+    color: #EA6E6E;
 }

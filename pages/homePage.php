@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<?php include '\xampp\htdocs\FileRouge\nav.html' ?> 
+<?php include '../nav.html' ?> 
     <!-- header  -->
     <header>
         <div>
@@ -35,7 +35,7 @@
                             <img class ="donate_icons" src="../images/add.png" alt="">
                             <p> Sign up and make your appointment </p>
                         </div>
-                        <div class="donate_divs">
+                        <div id="centred_donate_icon" class="donate_divs">
                             <img class ="donate_icons" src="../images/email.png" alt="">
                             <p>Receive an email with your appointment informations</p>
                         </div>
@@ -97,14 +97,7 @@
             </div>
         </section>
     </main>
-
-    <!-- footer -->
-    <footer>
-        <p>Adress: 1 Av. Moulay Rachid, Tanger 90100</p>
-        <img src="../images/logo_footer.png" alt="">
-        <p>Made by SAVE team © 2022</p>
-    </footer>
-
+    <?php include "../footer.html" ?>
 </body>
 
 </html>
