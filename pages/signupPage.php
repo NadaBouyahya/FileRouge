@@ -75,5 +75,8 @@
             <img src="../images/component.png" alt="">
         </div>
     </div>
+    
+    <!-- footer -->
+    <?php include '../footer.html' ?>
 </body>
 </html>

@@ -295,7 +295,7 @@ h1{
 
 footer{
     padding: 20px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     background-color: rgba(69, 90, 100, 0.79);
     display: flex;
     align-items: center;
@@ -335,7 +335,7 @@ footer img{
 
 .form_titles p a {
     color: #EA6E6E;
-
+    text-decoration: none;
 }
 /* .formInputs_container{
     display: flex;
@@ -376,7 +376,7 @@ footer img{
 .signup_btn input{
     width: auto;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     box-sizing: border-box;
     border-radius: 5px;
@@ -384,12 +384,9 @@ footer img{
     background-color: #E89A9A;
 }
 
-/* .signup_img{
+.signup_img img{
     height: 100%;
 }
-.signup_img img{
-    width: 400px;
-} */
 
 /*login page style*/
 
@@ -401,6 +398,7 @@ footer img{
     margin-top: 140px;
 
 }
+
 .signin_inputs{
     display: flex;
     align-items: center;

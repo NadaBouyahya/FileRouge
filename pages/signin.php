@@ -36,5 +36,8 @@
             <img src="../images/Component _signin.png" alt="">
         </div>
     </div>
+  
+    <!-- footer -->
+    <?php include "../footer.html" ?>
 </body>
 </html>
