@@ -465,3 +465,25 @@ footer img{
     text-decoration: none;
     color: #EA6E6E;
 }
+
+/* appointment making page - eligibility */
+
+#eligibility_date{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+#eligibility_date div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eligiDate_drop{
+    width: 50px;
+}
+#middle_arrow_img {
+    width:300px;
+}
