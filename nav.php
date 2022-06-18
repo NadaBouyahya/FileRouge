@@ -1,3 +1,10 @@
+<?php
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } ?>
+
+
 <nav>
         <div>
             <div class="Logo_container">
@@ -15,7 +22,14 @@
             <div class="nav_left">
                 <a href="#">
                     <a href="signin.php"> <img class="login_icon" src="../images/user.png" alt=""></a>
-                    <span><a href="signin.php">Login</a></span>
+                    
+                <!-- if the session is empty, print Login
+                    else print Log out -->
+                    <?php if(!isset($_SESSION["id_donor"]) || $_SESSION["id_donor"]==""){ ?>
+                        <span><a href="signin.php">Login</a></span>
+                    <?php } else{ ?>
+                        <span><a href="logout.php">Log out</a></span>
+                    <?php } ?>
                 </a>
             </div>
         </div>

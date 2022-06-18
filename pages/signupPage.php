@@ -85,12 +85,15 @@ if (isset($_POST["signup"])){
         $error = true;
     }
 
-    // insert into database table donor
+    // INSERT into database: table donor
     if($error == false) {
-        $sql_request = "INSERT INTO donor VALUES('$cin', '$firstName', '$lastName', '$gender', '$address', '$birth', '$phone')";
+        $sql_request = "INSERT INTO donor VALUES('$cin', '$firstName', '$lastName', '$email', '$Password', '$gender', '$address', '$birth', '$phone', $bloodType)";
         $conn->query($sql_request);
+        header("Location:signin.php");
     }
+
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -103,7 +106,7 @@ if (isset($_POST["signup"])){
     <title>signup</title>
 </head>
 <body>
-    <?php include '../nav.html' ?>
+    <?php include '../nav.php' ?>
     <div class="signup_container">
         <div class="signupForm_div">
 
@@ -171,10 +174,15 @@ if (isset($_POST["signup"])){
                     <div>
                         <select name="blood_type">
                             <option selected disabled hidden value>-- Select your blood type --</option>
-                            <option>A-</option>
-                            <option>B-</option>
-                            <option>A+</option>
-                            <option>B+</option>
+                            <option value="1">A-</option>
+                            <option value="2">A+</option>
+                            <option value="3">B-</option>
+                            <option value="4">B+</option>
+                            <option value="5">O-</option>
+                            <option value="6">O+</option>
+                            <option value="7">AB+</option>
+                            <option value="8">AB-</option>
+
                         </select>
                         <span><?php if(isset($_POST["signup"])){echo $err_blood_type;} ?></span> 
                     </div>
