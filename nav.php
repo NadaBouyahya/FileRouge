@@ -15,7 +15,7 @@
             <div class="nav_center">
                 <ul>
                     <li><a href="homePage.php">Home</a></li>
-                    <li><a href="#">Donate now</a></li>
+                    <li><a href="appointment.php">Donate now</a></li>
                     <li><a href="#">About us</a></li>
                 </ul>
             </div>

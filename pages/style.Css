@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
+ /* homePage.php */
 *{
     margin: 0;
     padding: 0;
@@ -109,7 +109,7 @@ nav > div{
     align-items: center;
 }
 
-/*header style*/
+/*home header style*/
 
 header > div:nth-child(1){
     position: relative;
@@ -165,7 +165,7 @@ header img:nth-child(1){
     cursor: pointer;
 }
 
-/* first section */
+/* home first section */
 h1{
     font-size: 28px;
 }
@@ -311,7 +311,7 @@ footer img{
     width: 62px;
 }
 
-/* Sign up page design*/
+/* signupPage.php*/
 
 .signup_container{
     display: flex;
@@ -389,7 +389,7 @@ footer img{
     height: 100%;
 }
 
-/*login page style*/
+/*signin.php*/
 
 .signinForm_div{
     display: flex;
@@ -467,12 +467,13 @@ footer img{
     color: #EA6E6E;
 }
 
-/* appointment making page - eligibility */
+/* appointment.php */
 
-main{
+.apointment_main{
     display: flex;
     justify-content: start;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 #appointment_steps{
     display: flex;
@@ -502,7 +503,7 @@ main{
 }
 
 #eligibility_parag{
-    width: 70%;
+    width: 80%;
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -512,8 +513,14 @@ main{
     width: 100%;
     padding-left: 5%;
 }
+
 #eligibility_parag p{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+#eligibility_parag span{
+    font-size: 16px;
+    color: #EA6E6E;
 }
 
 #options_conatainer{
@@ -521,4 +528,46 @@ main{
     flex-direction: column;
     align-items: flex-start;
     width: fit-content;
+}
+
+#options_conatainer > div{
+    margin-bottom: 15px;
+}
+
+#options_conatainer div label{
+    margin-left: 10px;
+}
+
+#test_btns_div{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 75%;
+}
+
+#test_btns_div #reset_btn{
+    padding: 10px;
+    width: 120px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #455A64;
+    font-size: 17px;
+    color: #2F3F46;
+    cursor: pointer;
+}
+
+#test_btns_div #continue_btn{
+    padding: 10px;
+    width: 120px;
+    background-color: #E89A9A;
+    border-radius: 5px;
+    border-style: none;
+    border-width: 1px;
+    border-color: #455A64;
+    font-size: 17px;
+    color: #2F3F46;
+    cursor: pointer;
+
 }
