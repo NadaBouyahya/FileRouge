@@ -1,7 +1,11 @@
 <?php 
 include "conn.php";
-
+?>
+<?php
+// form validation
 if (isset($_POST["signup"])){
+    $error = false;
+
     $firstName = $_POST["fname"];
     $err_fname = "";
 
@@ -35,38 +39,56 @@ if (isset($_POST["signup"])){
     $bloodType = $_POST["blood_type"];
     $err_blood_type = "";
 
-    if($firstName=="" || strlen($firstName)<3) {
-        $err_fname = "firs tname must be 5 or more characters";
+    // form validation
+    if(!preg_match('/[a-zA-Z]{3,20}/', $firstName)) {
+        $err_fname = "first name must be 3 or more characters";
+        $error = true;
     }
-    if($lastName=="" || strlen($lastName)<3) {
-        $err_lname = "last name must be 5 or more characters";
+    if(!preg_match('/[a-zA-Z]{3,20}/', $lastName)) {
+        $err_lname = "last name must be 3 or more characters";
+        $error = true;
     }
-    if($email=="" || strlen($email)<5) {
+    if(!preg_match('/([a-zA-Z0-9]{4,})@gmail\.com/', $email)) {
         $err_email = "invalid email format";
+        $error = true;
     }
-    if($Password=="" || strlen($Password)<8) {
+    if(!preg_match('/[a-zA-Z0-9]{8,}/', $Password)) {
         $err_pass = "password must be 8 or more characters";
+        $error = true;
     }
     if($passConfirm != $Password) {
         $err_pass_confirm = "doesn't match the password!";
+        $error = true;
     }
-    if($phone=="" || strlen($phone)<10) {
-        $err_phone = "last name must be 10 or more characters";
+    if(!preg_match('/(06)[0-9]{8}/', $phone)) {
+        $err_phone = "invalid phone number";
+        $error = true;
     }
-    if($cin=="" || strlen($cin)<5) {
-        $err_cin = "please enter a valid lastname";
+    if(!preg_match('/[A-Z]{2}[0-9]{6}/', $cin)) {
+        $err_cin = "invalid CIN";
+        $error = true;
     }
-    if($address=="" || strlen($address)<5) {
-        $err_address = "please enter a valid lastname";
+    if(strlen($address)<5) {
+        $err_address = "please enter a valid address";
+        $error = true;
     }
-    if($birth=="" || strlen($birth)<5) {
-        $err_birth = "please enter a valid lastname";
+    if($birth == "") {
+        $err_birth = "please enter your birth date";
+        $error = true;
     }
-    if($gender=="" || strlen($gender)<5) {
-        $err_gender = "please enter a valid lastname";
+    if($gender == "") {
+        $err_gender = "please select a gender";
+        $error = true;
     }
-    if($blood_type=="" || strlen($blood_type)<5) {
-        $err_blood_type = "please enter a valid lastname";
+    if($bloodType == "") {
+        $err_blood_type = "please select your blood type";
+        $error = true;
+    }
+
+    // insert into database table donor
+    if($error == false) {
+        $sql_request = "INSERT INTO donor VALUES('$cin', '$firstName', '$lastName', '$gender', '$address', '$birth', '$phone')";
+        $conn->query($sql_request);
     }
 }
 ?>
@@ -95,32 +117,32 @@ if (isset($_POST["signup"])){
                     
                     <div>
                         <label for="fname">First Name</label>
-                        <input type="text" name="fname">  
+                        <input type="text" name="fname" required>
                         <span><?php if(isset($_POST["signup"])){echo $err_fname;} ?></span> 
                     </div>
                     <div>
                         <label for="lname">Last Name</label>
-                        <input type="text" name="lname">  
+                        <input type="text" name="lname" required>  
                         <span><?php if(isset($_POST["signup"])){echo $err_lname;} ?></span>  
                     </div>
                     <div>
                         <label for="email_address">Email</label>
-                        <input type="text" name="email_address"> 
+                        <input type="text" name="email_address" required> 
                         <span><?php if(isset($_POST["signup"])){echo $err_email;} ?></span>   
                     </div>
                     <div>
                         <label for="pass">Password</label>
-                        <input type="password" name="pass"> 
+                        <input type="password" name="pass" required> 
                         <span><?php if(isset($_POST["signup"])){echo $err_pass;} ?></span>   
                     </div>
                     <div>
                         <label for="pass_confirm">Password confirmation</label>
-                        <input type="password" name="pass_confirm">  
+                        <input type="password" name="pass_confirm" required>  
                         <span><?php if(isset($_POST["signup"])){echo $err_pass_confirm;} ?></span>  
                     </div>
                     <div>
                         <label for="phone">Phone number</label>
-                        <input type="text" name="phone">  
+                        <input type="text" name="phone" required>  
                         <span><?php if(isset($_POST["signup"])){echo $err_phone;} ?></span>  
                     </div>
                     <div>
