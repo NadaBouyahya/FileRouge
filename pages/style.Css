@@ -496,7 +496,7 @@ footer img{
 }
 
 .eligiDate_drop{
-    width: 50px;
+    width: 40px;
 }
 #middle_arrow_img {
     width:300px;
@@ -570,4 +570,75 @@ footer img{
     color: #2F3F46;
     cursor: pointer;
 
+}
+
+/*Pop up warning*/
+
+#popup_container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(69, 90, 100, 0.3);
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+#popup_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height:fit-content;
+    font-size: 20px;
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 7px;
+    position: relative;
+}
+#popup_div p{
+    margin: 40px 0;
+    color: #455A64;
+}
+
+#popup_btn{
+    padding: 10px;
+    width: 120px;
+    background-color: #E89A9A;
+    border-radius: 5px;
+    border-style: none;
+    border-width: 1px;
+    border-color: #455A64;
+    cursor: pointer;
+
+}
+
+#popup_btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+#popup_clear{
+    position: absolute;
+    width: 18px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* appoinDate.php */
+
+#date_btns_div{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    width: 100%;
+    /* margin-left: 100px; */
 }

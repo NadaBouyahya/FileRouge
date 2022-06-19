@@ -44,7 +44,7 @@
                             <input class="test_option" name="op5" type="checkbox"><label for="op5">In the last 3 months, have you engaged in at-risk sexual behaviour?</label>
                         </div>
                         <div>
-                            <input name="op6" type="checkbox"><label for="op6">Have you had an operation or surgical procedure in the last 6 months, or are you planning on any in the 3 months after your donation?</label>
+                            <input  class="test_option" name="op6" type="checkbox"><label for="op6">Have you had an operation or surgical procedure in the last 6 months, or are you planning on any in the 3 months after your donation?</label>
                         </div>
                         <div>
                             <input class="test_option" name="op7" type="checkbox"><label for="op7">Are you pregnant, or have you been pregnant in the last 9 months?</label>
@@ -75,6 +75,16 @@
             </div>
         </div>
     </main>
+
+    <div id="popup_container">
+        <div id="popup_div">
+            <img src="../images/warning.png" alt="">
+            <p>Thank you for wanting to make a life-saving blood donation.
+            We suggest that you check your health condition in the nearest hospital</p>
+            <button id="popup_btn"> <a href="homePage.php">GO HOME</a></button>
+            <img id="popup_clear" src="../images/clear.png" alt="">
+        </div>
+    </div>
 
     <?php include "../footer.html" ?>
 <script src="../script.js"></script>
