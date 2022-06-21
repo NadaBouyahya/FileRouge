@@ -19,7 +19,7 @@
                     <?php if(!isset($_SESSION["id_donor"]) || $_SESSION["id_donor"]=="") {?>
                         <li><a href="signin.php">Donate now</a></li>
                     <?php } else { ?>
-                        <li><a href="appointment.php">Donate now</a></li>
+                        <li><a href="appoinTest.php">Donate now</a></li>
                         <?php } ?>
 
                     <li><a href="#">About us</a></li>
