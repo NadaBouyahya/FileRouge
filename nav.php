@@ -15,7 +15,13 @@
             <div class="nav_center">
                 <ul>
                     <li><a href="homePage.php">Home</a></li>
-                    <li><a href="appointment.php">Donate now</a></li>
+                    
+                    <?php if(!isset($_SESSION["id_donor"]) || $_SESSION["id_donor"]=="") {?>
+                        <li><a href="signin.php">Donate now</a></li>
+                    <?php } else { ?>
+                        <li><a href="appointment.php">Donate now</a></li>
+                        <?php } ?>
+
                     <li><a href="#">About us</a></li>
                 </ul>
             </div>

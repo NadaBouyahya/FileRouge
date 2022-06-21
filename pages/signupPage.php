@@ -174,15 +174,25 @@ if (isset($_POST["signup"])){
                     <div>
                         <select name="blood_type">
                             <option selected disabled hidden value>-- Select your blood type --</option>
-                            <option value="1">A-</option>
+                            <?php
+                             $sql_options = "SELECT * FROM blood_type";
+                            $type_options = $conn->query($sql_options); 
+                            
+
+                            while($row = $type_options->fetch_assoc()){
+                                echo '
+                                    <option value="'.$row["ID_type"].'">'.$row["Type"].'</option>
+                                ';
+                            }
+                            ?>
+                            <!-- <option value="1">A-</option>
                             <option value="2">A+</option>
                             <option value="3">B-</option>
                             <option value="4">B+</option>
                             <option value="5">O-</option>
                             <option value="6">O+</option>
                             <option value="7">AB+</option>
-                            <option value="8">AB-</option>
-
+                            <option value="8">AB-</option> -->
                         </select>
                         <span><?php if(isset($_POST["signup"])){echo $err_blood_type;} ?></span> 
                     </div>

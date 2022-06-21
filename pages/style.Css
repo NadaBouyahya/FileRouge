@@ -158,10 +158,10 @@ header img:nth-child(1){
     width: 180px;
     font-size: 21px;
     text-decoration: none;
-    color: white;
-    background-color:  rgba(69, 90, 100, 0.79);
+    color: #2F3F46;
+    background-color: rgb(255 255 255 / 79%);
     text-align: center;
-    border-radius: 5px;    
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -641,4 +641,24 @@ footer img{
     justify-content: space-around;
     width: 100%;
     /* margin-left: 100px; */
+}
+
+#date_container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#date_calendar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+#date_calendar a{
+    display: inline-block;
+    width: 10%;
+    background-color: #2F3F46;
+    color: white;
+    margin: 2px;
+    padding: 4px;
 }

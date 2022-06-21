@@ -8,7 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include '../nav.php' ?>
+<?php include 'conn.php' ?>
+<?php include '../nav.php' ?>
     <div>
 
         <div id="appointment_steps">
@@ -23,6 +24,39 @@
         </div>
 
     </div>
+
+    <div id="date_container">
+        <div id="date_calendar">
+            <div>
+            <?php 
+                $sql_date = "SELECT COUNT(*) AS date_count, appoin_date FROM `appointment` group by appoin_date;";
+                $date_res = $conn->query($sql_date);
+
+                $today = strtotime("today");
+                $end_day = strtotime('+3 weeks', $today);
+
+                while($today < $end_day){
+                    $day = date("Y-m-d", $today);
+                    $appointments_count = 0;
+
+                    while($row = $date_res->fetch_assoc()){
+                        if($row["appoin_date"] == $day){
+                            $appointments_count = $row["date_count"];
+                            echo "<a>". $day . " " . $appointments_count . "  </a>";
+                            continue;
+                        }
+                    }
+                    if($appointments_count == 0){
+                        echo "<a>". $day . " </a>";
+                    }
+                    // echo "<a>". date("M d", $today). "</a>";
+                    $today = strtotime('+1 day', $today);
+                }
+            ?>
+            </div>
+        </div>
+    </div>
+
 
     <?php include "../footer.html" ?>
 </body>
