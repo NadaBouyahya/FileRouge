@@ -76,6 +76,7 @@
         </div>
     </main>
 
+    <!-- warning popup -->
     <div id="popup_container">
         <div id="popup_div">
             <img src="../images/warning.png" alt="">
