@@ -18,8 +18,14 @@
             <div class="header_text">
                 <div>
                     <h2>Every blood drop is a life gift</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, repellat. Neque voluptatem, blanditiis eligendi deserunt voluptate earum harum odio labore hic perspiciatis aliquam alias iure incidunt quae, laudantium modi nemo.</p>
-                    <a class="header_button" href="#">Donate now</a>
+                    <p>Every day thousands of people’s lives are saved or improved thanks to the generosity of donors like you. But, sadly, there are still lots of patients we can’t treat because we don’t have enough supplies. There’s an urgent need for donations. Please help, if you can.</p>
+                    
+                    <?php if(!isset($_SESSION["id_donor"]) || $_SESSION["id_donor"]=="") {?>
+                        <a class="header_button" href="signin.php">Donate now</a>
+                    <?php } else { ?>
+                        <a class="header_button" href="appoinTest.php">Donate now</a>
+                    <?php } ?>
+
                 </div>
             </div>
         </div>
@@ -48,12 +54,12 @@
         </section>
 
         <!-- about us section -->
-        <section class="second_section">
+        <section id="aboutUs" class="second_section">
             <div class="about_div">
                 <h1>About us</h1>
                 <div class="about_content">
                     <img src="../images/about_us.jpg" alt="">
-                    <p>SAVE has been created  to provide an accessible and easy appointment process, in order to encourage you to donate  bla blo cop yuu trry futo omili xoro blo</p>
+                    <p>SAVE has been created  to provide an accessible and easy appointment process, in order to encourage you to donate your blood, and save a life. From what is donation to what it is used for, we explain the details for you, you can register now by choosing a suitable day for you, and visit our hospital from 8 am to 5 pm. </p>
                 </div>
             </div>
         </section>

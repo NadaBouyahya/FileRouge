@@ -2,6 +2,7 @@
 include "conn.php";
 
 session_start();
+$error = "";
 
 
 //Select request for login
@@ -19,6 +20,9 @@ if(isset($_POST["login"])){
         $_SESSION["id_donor"] = $login_data["CIN"];
         header("Location: homePage.php");
     }
+    else{
+        $error = "Email or password are invalid";
+    }
 
 }
 
@@ -31,24 +35,31 @@ if(isset($_POST["login"])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.Css">
+    <style>
+        footer{
+            transform: translate(0, 100%);
+        }
+    </style>
     <title>signin</title>
 </head>
 <body>
     <?php include '../nav.php' ?>
     <div class="signup_container">
         <div class="signinForm_div">
-            <div class="">
+            <div class="" style="margin-bottom: 60px">
                 <h2>Log in</h2>
             </div>
 
                 <form class='signin_inputs' method="POST" action="">
-
-                    <div>
-                        <input name="log_email" type="text" placeholder="Enter your email">   
+                    <span style="color:#EA6E6E"><?php echo $error; ?></span>
+                    <div style="margin-top: 0">
+                        <input style="margin-top: 0" name="log_email" type="text" placeholder="Enter your email">   
                     </div>
+                    
                     <div>
                         <input name="log_password" type="text" placeholder="Password">   
                     </div>
+                    
  
                     <div class="signin_btn" >
                         <span>Don’t have an account yet ? <a href="signupPage.php">Sign up</a></span>

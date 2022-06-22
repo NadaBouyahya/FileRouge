@@ -22,7 +22,7 @@
                         <li><a href="appoinTest.php">Donate now</a></li>
                         <?php } ?>
 
-                    <li><a href="#">About us</a></li>
+                    <li><a href="#aboutUs">About us</a></li>
                 </ul>
             </div>
             <div class="nav_left">
