@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{1F4BBB09-0B69-4480-AC06-2DA3CEE738BD}" Label="" LastModificationDate="1654180595" Name="Diagramme de classes_1" Objects="21" Symbols="5" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{1F4BBB09-0B69-4480-AC06-2DA3CEE738BD}" Label="" LastModificationDate="1654181569" Name="Diagramme de classes_1" Objects="21" Symbols="5" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -1418,7 +1418,7 @@ MULA 0 Arial,8,N</a:FontList>
 <o:AssociationSymbol Id="o10">
 <a:CreationDate>1654180538</a:CreationDate>
 <a:ModificationDate>1654180595</a:ModificationDate>
-<a:Rect>((-5111,375), (9962,10725))</a:Rect>
+<a:Rect>((-5074,375), (9925,10725))</a:Rect>
 <a:ListOfPoints>((8088,10725),(8088,5831),(-3087,5831),(-3087,375))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -1530,11 +1530,11 @@ LABL 0 Arial,8,N</a:FontList>
 <c:Attributes>
 <o:Attribute Id="o16">
 <a:ObjectID>5CF546EE-CC3E-4C78-9393-95CB48C4A88A</a:ObjectID>
-<a:Name>ID_res</a:Name>
-<a:Code>idRes</a:Code>
+<a:Name>ID_appoin</a:Name>
+<a:Code>idAppoin</a:Code>
 <a:CreationDate>1654179822</a:CreationDate>
 <a:Creator>Solicode</a:Creator>
-<a:ModificationDate>1654179952</a:ModificationDate>
+<a:ModificationDate>1654181569</a:ModificationDate>
 <a:Modifier>Solicode</a:Modifier>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>

@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <?php include "../footer.html" ?>
+    <?php include "../footer.html"?>
 <script src="../script.js"></script>
 </body>
 

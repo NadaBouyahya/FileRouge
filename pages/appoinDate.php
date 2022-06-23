@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.Css">
     <title>Document</title>
 </head>
-<body style="height: 90vh;">
+<body style="height: 105vh;">
 <?php include 'conn.php' ?>
 <?php include '../nav.php' ?>
     <div>
@@ -20,9 +20,10 @@
 
 
     </div>
+    
 
-    <div id="date_container">
-        <div id="date_calendar">
+    <div id="date_container " style="margin-top:-100px;  margin-left:17em;">
+        <div style="padding:50px 0px 0px 0px; " id="date_calendar">
             <div>
             <?php 
                 $sql_date = "SELECT COUNT(*) AS date_count, appoin_date FROM `appointment` group by appoin_date;";
@@ -73,8 +74,8 @@
             </div>
         </div>
     </div>
+<br><br><br>
 
-
-    <?php include "../footer.html" ?>
+    <?php  include "../footer.html" ?>
 </body>
 </html>
